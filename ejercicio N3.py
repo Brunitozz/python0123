@@ -1,9 +1,9 @@
-def operacion():
-    print('Ingrese 2 numeros para saber cual es el mayor de ellos dos')
-    num1=int(input('primer numero: '))
-    num2=int(input('segunto numero: '))
-    if num1>num2:
-        print(f'{num1} es mayor que {num2}')
+print('Ingrese 2 numeros para saber cual es el mayor de ellos dos')
+def operacion(a,b):
+    if a>b:
+        print(f'{a} es mayor que {b}')
     else:
-        print(f'{num2} es mayor que {num1}')
-operacion()
+        print(f'{b} es mayor que {a}')
+m=int(input('primer numero: '))
+n=int(input('segunto numero: '))
+operacion(m,n)
