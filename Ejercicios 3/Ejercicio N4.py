@@ -1,22 +1,21 @@
+class Producto:
+    def __init__(self, articulo) -> None:
+        self.articulo=articulo
+        print('el producto es: ', self.articulo)
+        pass
 class Catalogo:
-    def __init__(self,productos=[]):
-        self.productos=productos
-    def __str__(self):
-        return f'{self.productos}'
-    productos=[]
-    def agregar(self,p):
-        self.productos.append(p)
+    mercancia=[]
+    def __init__(self,mercancia=[]):
+        self.mercancia=mercancia
+    def agregar(self,m):
+        self.mercancia.append(m)
     def mostrar(self):
-        for p in self.productos:
-            print(p)
-pro1=Catalogo('Aceites y líquidos')
-pro2=Catalogo('Neumáticos')
-pro3=Catalogo('Filtros')
-pro1.mostrar()
+        for m in self.mercancia:
+            return m
 
-print("""Bienvenido a Ferreterias Sabrosas LLantas
-            ¿Que desea realizar?
-            a)Revisar el catalogo de productos
-            b)Ingresar productos""")
-m=input("elija una opcion: ")
+arti1=Producto('neumaticos')
+mer1=Catalogo([arti1])
+mer1.mostrar()
+mer1.agregar(Producto('aceites'))
+mer1.mostrar()
 
