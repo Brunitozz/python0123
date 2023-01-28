@@ -18,4 +18,3 @@ mer1=Catalogo([arti1])
 mer1.mostrar()
 mer1.agregar(Producto('aceites'))
 mer1.mostrar()
-
